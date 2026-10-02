@@ -1,24 +1,13 @@
 using BasicThread;
-using System.Runtime.InteropServices;
 
 namespace Basic_Thread
 {
     public partial class FrmBasicThread : Form
     {
-        // Import AllocConsole from kernel32.dll to spawn the console window
-        [DllImport("kernel32.dll", SetLastError = true)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        static extern bool AllocConsole();
 
         public FrmBasicThread()
         {
             InitializeComponent();
-        }
-
-        private void FrmBasicThread_Load(object sender, EventArgs e)
-        {
-            // Allocate the console window when the form opens
-            AllocConsole();
         }
 
         private void btnRun_Click(object sender, EventArgs e)

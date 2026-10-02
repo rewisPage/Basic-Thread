@@ -67,7 +67,6 @@
             Name = "FrmBasicThread";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
-            Load += FrmBasicThread_Load;
             ResumeLayout(false);
         }
 
